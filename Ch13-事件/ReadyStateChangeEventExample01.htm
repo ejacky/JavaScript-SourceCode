@@ -11,8 +11,8 @@
 
         EventUtil.addHandler(document, "readystatechange", function(event){
             if (document.readyState == "interactive" || document.readyState == "complete"){
-                EventUtil.removeHandler(document, "readystatechange", arguments.callee); 
-                alert("Content loaded");                      
+                EventUtil.removeHandler(document, "readystatechange", arguments.callee);
+                alert("Content loaded");
             }
         });
         EventUtil.addHandler(window, "load", function(event){
